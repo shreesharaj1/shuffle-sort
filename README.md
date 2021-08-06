@@ -16,4 +16,24 @@ Working url: https://shreesharaj1.github.io/shuffle-sort/
 
 ```
 
+```
+//Shuffle function which gets a shuffled array and sets the *order* style property of the flex items to order randomly and the actual DOM elements are not moved.
 
+function shuffle() {
+      const shuffledArray = shuffleArray()
+      const boxes = document.getElementsByClassName("box");
+      for(index in boxes) {
+        boxes[index].style.order = shuffledArray[index];
+      }
+    }
+
+//Sort function which just loops all the flex items and sets the *order* style property in ascending order to sort the boxes.
+    
+function sort() {
+  const boxes = document.getElementsByClassName("box");
+  for(index in boxes) {
+    boxes[index].style.order = index;
+  }
+}
+
+```
