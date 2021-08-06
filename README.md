@@ -1,2 +1,4 @@
 # shuffle-sort
-Simple sort and shuffle of flexbox squares in plain javascript.
+Simple flexbox squares with the ability to shuffle and sort them in vanilla javascript.
+
+
