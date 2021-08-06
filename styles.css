@@ -1,0 +1,157 @@
+
+* {
+  font-family: 'Georama', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.page-container {
+  margin: 0 auto;
+  max-width: 976px;
+  overflow: hidden;
+}
+
+.center-text {
+  text-align: center;
+  width: 100%;
+  padding: 8px;
+}
+
+.small-text {
+  font-size: 0.7rem;
+  color: #2F454E;
+}
+
+.container {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 5px solid #BFBFBF;
+  padding-bottom: 30px;
+}
+
+.btn-container {
+  padding-top: 25px;
+  width: 25%;
+  text-align: center;
+}
+
+.box-container {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.box {
+  color: #FFF;
+  flex-basis: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.color-1 {
+  background-color: #6F98A8;
+}
+.color-2 {
+  background-color: #2B8EAD;;
+}
+.color-3 {
+  background-color: #2F454E
+}
+.color-4 {
+  background-color: #BFBFBF;
+}
+
+.mobile-background {
+  background-color: #333333;
+}
+.custom-btn {
+  background-color: #72C3DC;
+  color: #FFF;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 2px #203235;
+  cursor: pointer; 
+  text-transform: uppercase;
+}
+
+.custom-btn:active {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    background-color: #FFF;
+    border-top: none;
+    padding: 0 20px;
+  }
+
+  .heading {
+    background-color: #333333;
+    color: #FFF;
+  }
+
+  .box-container {
+    width: 100%;
+  
+  }
+
+  .btn-container {
+    width: 100%;
+    order: -1;
+    padding-top: 10px;
+  }
+
+  .custom-btn {
+    width: 30%;
+  }
+
+  .box {
+    flex-basis: 100%;
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    border-left-width: 8px;
+    border-left-style: solid;
+    padding: 8px;
+  }
+
+  .box::after {
+    padding: 10px;
+  }
+
+  .color-1 {
+    border-left-color: #6F98A8;
+    background-color: #EFEFEF;
+  }
+  .color-2 {
+    border-left-color: #2B8EAD;
+    background-color: #EFEFEF;
+  }
+  .color-3 {
+    border-left-color: #2F454E;
+    background-color: #EFEFEF;
+  }
+  .color-4 {
+    border-left-color: #BFBFBF;
+    background-color: #EFEFEF;
+  }
+
+}
